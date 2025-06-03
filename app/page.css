@@ -1,0 +1,45 @@
+.container {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #123e8c;
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #234cad;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.list {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.image {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
