@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [{ "src": "next.config.js", "use": "@vercel/next" }],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.js" }
+  ],
+  "crons": [
+    {
+      "path": "/api/notify-tenants",
+      "schedule": "0 9 * * 1"
+    }
+  ],
+  "regions": ["syd1"]
+}

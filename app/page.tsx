@@ -1,81 +1,42 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-          Living in a Strata apartment is different from other types of housing in a few key ways:
+    <main className="min-h-screen bg-gray-100 p-6">
+    <section className="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+    <h1 className="text-4xl font-bold text-blue-900 mb-4">Strata Harmony</h1>
+    <p className="text-gray-700 mb-6">
+    Welcome to the official management portal for our strata-titled apartment building in New South Wales.
+    </p>
 
-          Ownership Structure: You own your individual unit, but shared areas like hallways, gardens, and roofs are owned collectively by all unit owners.
+    <h2 className="text-2xl font-semibold text-blue-800 mb-2">Strata Committee</h2>
+    <ul className="list-disc pl-6 text-gray-700 mb-6">
+    <li><strong>Chairperson:</strong> Alex Lee</li>
+    <li><strong>Secretary:</strong> Morgan Reid</li>
+    <li><strong>Treasurer:</strong> Jamie Chen</li>
+    <li>Member: Sam Patel</li>
+    <li>Member: Riley Gomez</li>
+    </ul>
 
-          Strata Fees: You pay regular fees to cover the maintenance and management of common areas and shared services.
+    <h2 className="text-2xl font-semibold text-blue-800 mb-2">Notices & Documents</h2>
+    <ul className="list-disc pl-6 text-gray-700 mb-6">
+    <li><a className="text-blue-600 underline" href="/assets/agm-minutes-2025.pdf" target="_blank">2025 AGM Minutes (PDF)</a></li>
+    <li><a className="text-blue-600 underline" href="/assets/building-insurance.pdf" target="_blank">Current Building Insurance Policy</a></li>
+    </ul>
 
-          By-Laws: There are rules set by the owners’ corporation (or body corporate) that you must follow. These can include restrictions on noise, pets, or renovations.
+    <h2 className="text-2xl font-semibold text-blue-800 mb-2">Building Image</h2>
+    <Image
+    src="/assets/building.jpg"
+    alt="Apartment Building"
+    width={800}
+    height={500}
+    className="rounded-lg shadow-md"
+    />
 
-          Decision-Making: Major decisions about the building are made collectively through meetings with other owners. You may vote on issues or be required to comply with group decisions.
-
-          Repairs and Maintenance: You are responsible for maintaining your unit. The owners’ corporation is responsible for common areas.
-
-          Insurance: Building insurance is generally arranged by the owners’ corporation, but you still need insurance for the contents of your unit.
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-      </footer>
-    </div>
+    <h2 className="text-2xl font-semibold text-blue-800 mt-6 mb-2">Contact Us</h2>
+    <p className="text-gray-700 mb-2">For maintenance issues, levy inquiries, or general questions, email us at:</p>
+    <a href="mailto:committee@strataharmony.com" className="text-blue-600 underline">committee@strataharmony.com</a>
+    </section>
+    </main>
   );
 }
